@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanctuary Notes — Privacy Policy</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #F5F0E8;
+    --parchment: #EDE4D0;
+    --brown: #2C1810;
+    --accent: #8B6030;
+    --gold: #C9A84C;
+    --sub: #9A7B6A;
+    --border: #DDD4C0;
+    --card: #FFFEF9;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background-color: var(--cream);
+    font-family: 'Lato', sans-serif;
+    color: var(--brown);
+    min-height: 100vh;
+  }
+
+  /* SCRIPTURE BANNER */
+  .scripture-banner {
+    background: var(--brown);
+    color: rgba(245,240,232,0.9);
+    text-align: center;
+    padding: 20px 48px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+  }
+
+  .scripture-banner span {
+    color: var(--gold);
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 12px;
+  }
+
+  /* NAV */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 48px;
+    border-bottom: 1px solid var(--border);
+    background: rgba(245,240,232,0.9);
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .nav-mark {
+    width: 36px;
+    height: 36px;
+    background: var(--accent);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .nav-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    color: var(--brown);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: var(--sub);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--accent); }
+
+  /* CONTENT */
+  .content {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 48px;
+    animation: fadeUp 0.8s ease both;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 52px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+    line-height: 1.1;
+  }
+
+  .updated {
+    font-size: 13px;
+    color: var(--sub);
+    margin-bottom: 48px;
+    font-style: italic;
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 48px;
+  }
+
+  .divider-line {
+    width: 60px;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .divider-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--gold);
+  }
+
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 48px;
+    margin-bottom: 12px;
+    letter-spacing: -0.3px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #4A3828;
+    font-weight: 300;
+    margin-bottom: 16px;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin-bottom: 16px;
+  }
+
+  ul li {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #4A3828;
+    font-weight: 300;
+    margin-bottom: 6px;
+  }
+
+  .highlight-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--gold);
+    border-radius: 0 12px 12px 0;
+    padding: 20px 24px;
+    margin: 32px 0;
+  }
+
+  .highlight-box p {
+    margin: 0;
+    font-style: italic;
+    color: var(--sub);
+  }
+
+  .contact-box {
+    background: var(--parchment);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+    margin-top: 64px;
+  }
+
+  .contact-box h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .contact-box p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .contact-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: background 0.2s;
+  }
+
+  .contact-btn:hover { background: #7A5028; }
+
+  /* FOOTER */
+  footer {
+    padding: 40px 48px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .footer-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    color: var(--sub);
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-links a {
+    font-size: 13px;
+    color: var(--sub);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover { color: var(--accent); }
+
+  .footer-copy {
+    font-size: 12px;
+    color: var(--border);
+    width: 100%;
+    text-align: center;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    margin-top: 8px;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 640px) {
+    nav { padding: 16px 24px; }
+    .nav-links { display: none; }
+    .content { padding: 48px 24px; }
+    h1 { font-size: 38px; }
+    footer { padding: 24px; flex-direction: column; text-align: center; }
+    .scripture-banner { padding: 16px 24px; font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- SCRIPTURE BANNER -->
+<div class="scripture-banner">
+  "Your word is a lamp to my feet and a light to my path."
+  <span>Psalm 119:105</span>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">
+    <div class="nav-mark">✦</div>
+    <span class="nav-title">Sanctuary Notes</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Support</a></li>
+    <li><a href="index.html#faq">FAQ</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="privacy-policy.html">Privacy</a></li>
+  </ul>
+</nav>
+
+<!-- CONTENT -->
+<div class="content">
+  <p class="eyebrow">Legal</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: May 2026</p>
+
+  <div class="divider">
+    <div class="divider-line"></div>
+    <div class="divider-dot"></div>
+    <div class="divider-line"></div>
+  </div>
+
+  <div class="highlight-box">
+    <p>Sanctuary Notes is built for the church. We believe your personal notes, reflections, and prayers are sacred — and we take your privacy seriously. We do not sell, share, or monetize your data in any way.</p>
+  </div>
+
+  <h2>Information We Collect</h2>
+  <p>Sanctuary Notes stores all your notes, drawings, and settings locally on your device. We do not collect, transmit, or store any personal information on our servers.</p>
+
+  <h2>Bible API Services</h2>
+  <p>When you search for Bible passages or load the Verse of the Day, your search query is sent to third-party Bible APIs to retrieve scripture content. These requests contain no personal identifying information — only the scripture reference or keyword you searched for.</p>
+  <p>Services used:</p>
+  <ul>
+    <li>YouVersion Bible API — for Verse of the Day and passage lookup</li>
+    <li>API.Bible — for keyword Bible search across multiple translations</li>
+  </ul>
+
+  <h2>Data Storage</h2>
+  <p>All notes, drawings, and preferences are stored locally on your device using Apple's secure AsyncStorage API. Your data does not leave your device except for the Bible search queries described above.</p>
+
+  <h2>Apple Pencil and Drawing Data</h2>
+  <p>Drawing and handwriting data created with Apple Pencil is stored locally on your device as part of your notes. We do not access, transmit, or process your drawing data in any way.</p>
+
+  <h2>Analytics and Tracking</h2>
+  <p>Sanctuary Notes does not use any analytics, crash reporting, or tracking services. We do not track your usage patterns, behavior, device information, or any other activity within the app.</p>
+
+  <h2>Advertising</h2>
+  <p>Sanctuary Notes contains no advertising of any kind. We do not work with ad networks and do not share any data with advertisers.</p>
+
+  <h2>In-App Purchases</h2>
+  <p>Sanctuary Notes does not currently offer in-app purchases. Any future purchases will be processed securely through Apple's App Store and subject to Apple's privacy policy.</p>
+
+  <h2>Children's Privacy</h2>
+  <p>Sanctuary Notes does not knowingly collect any information from children under the age of 13. The app contains no advertising, social features, or data collection of any kind, making it safe for all ages.</p>
+
+  <h2>Third-Party Links</h2>
+  <p>Sanctuary Notes may display links to third-party websites such as Bible reference sites. We are not responsible for the privacy practices of these external sites and encourage you to review their policies.</p>
+
+  <h2>Data Security</h2>
+  <p>Since all your data is stored locally on your device, your notes are protected by your device's built-in security features including Face ID, Touch ID, and device encryption.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time as the app grows. We will notify you of significant changes by updating the date at the top of this page. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+  <h2>Your Rights</h2>
+  <p>Since we do not collect or store personal data on our servers, there is nothing for us to delete or export on your behalf. You can delete all your notes and data by uninstalling the app from your device.</p>
+
+  <div class="contact-box">
+    <h3>Questions about privacy?</h3>
+    <p>We're happy to answer any questions you have about how Sanctuary Notes handles your data.</p>
+    <a href="mailto:kaievangelista17@gmail.com?subject=Sanctuary Notes Privacy" class="contact-btn">Contact Us</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">Sanctuary Notes &nbsp;·&nbsp; CityView Bible Church, Round Rock TX</div>
+  <div class="footer-links">
+    <a href="index.html">Support</a>
+    <a href="mailto:kaievangelista17@gmail.com">Contact</a>
+  </div>
+  <p class="footer-copy">© 2026 Sanctuary Notes &nbsp;·&nbsp; Abide. Grow. Serve. Share.</p>
+</footer>
+
+</body>
+</html>
